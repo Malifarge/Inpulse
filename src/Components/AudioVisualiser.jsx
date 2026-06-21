@@ -53,7 +53,7 @@ const AudioVisualiser= () => {
     return () => {
       cancelAnimationFrame(raf);
     }
-  }, [canvasRef, analyser]);
+  }, [canvasRef, analyser, Stroke]);
 
 
   return analyser ? <Canvas $bg={bg} ref={canvasRef} /> : null;
